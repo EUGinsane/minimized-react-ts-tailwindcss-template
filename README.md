@@ -2,6 +2,13 @@
 
 This is a minimized React project that is buit from scratch with Webpack, including TypeScript, TailwindCSS, Jest, React Testing Library that follow AirBnb coding conventions with ESlint and Prettier.
 
+* ✅ React 17
+* ✅ TailwindCSS that supports autoprefix to be compatible with Chrome, Firefox and Safari
+* ✅ TypeScript 4
+* ✅ Configurable Webpack 5 that separates Development and Production environment
+* ✅ Supports Jest with React Testing Library
+* ✅ Strictly config ESLint + Prettier that follows AirBnb's coding conventions
+
 ## Setup
 
 1. Install NodeJS: https://nodejs.org/en/, you can easily switch node version with NVM (https://github.com/nvm-sh/nvm)
