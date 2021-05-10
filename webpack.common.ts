@@ -5,6 +5,7 @@ import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import tailwindcss from 'tailwindcss';
 import autoprefixer from 'autoprefixer';
 import { CleanWebpackPlugin } from 'clean-webpack-plugin';
+import CopyWebpackPlugin from 'copy-webpack-plugin';
 
 const config: Configuration = {
   entry: resolve(__dirname, 'src/index.tsx'),
@@ -48,6 +49,14 @@ const config: Configuration = {
     new MiniCssExtractPlugin({
       filename: 'styles/[name].[contenthash].css',
       chunkFilename: '[id].[contenthash].css',
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: resolve(__dirname, 'public/images'),
+          to: 'images',
+        },
+      ],
     }),
   ],
 };
